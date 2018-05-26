@@ -1,4 +1,5 @@
 // Dependencies
+var path = require('path');
 var express = require('express');
 var bodyParser = require("body-parser");
 
@@ -19,5 +20,5 @@ require('./routes/htmlRoutes')(app);
 
 // Listener
 app.listen(PORT, function(){
-    console.log('App Listening on PORT: ' + PORT);
+    console.log("Server listening on: http://localhost:" + PORT);
 });
